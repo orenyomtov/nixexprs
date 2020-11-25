@@ -14,5 +14,6 @@ flox.python3Packages.buildPythonApplication rec {
   propagatedBuildInputs = with python3Packages; [
     # A full list of python3 packages can be found with:
     # % floxpm packages nixpkgs --show-libs | grep ^python3.Packages
+    pythonPackages.flask
   ];
 }
